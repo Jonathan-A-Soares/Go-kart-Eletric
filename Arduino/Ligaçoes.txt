@@ -1,0 +1,68 @@
+-----------------------------Modulo Rfid-Rc522-----------------------------
+Pino SDA ligado na porta 10 do Arduino
+Pino SCK ligado na porta 13 do Arduino
+Pino MOSI ligado na porta 11 do Arduino
+Pino MISO ligado na porta 12 do Arduino
+Pino NC – Não conectado
+Pino GND  ligado no pino GND do Arduino
+Pino RST ligado na porta 9 do Arduino
+Pino 3.3 – ligado ao pino 3.3 V do Arduino
+
+
+-----------------------------Chave Do Modulo Rfid -----------------------------
+Pino 1  pino D2 do arduino
+Pino 2  resitor 1k VCC +5v
+Pino 3 resitor 1k GND
+
+
+-----------------------------Display lcd 16x02-----------------------------
+GND    GNd
+Vcc    5V
+SDA    A4 Do Arduino
+SCL    A5
+
+
+-----------------------------Modulo Gps-Neo-6m-----------------------------
+Gng    Gng
+TX      D4 do arduino
+RX      D5 d oarduino
+Vcc    3,3v
+
+
+-----------------------------Buser Pasivo-----------------------------
+GND    GNd
+Vcc    D6
+
+
+-----------------------------Modulo espansor I/O MCP23017-----------------------------
+GND    GNd
+Vcc    5V
+SDA    A4 Do Arduino
+SCL    A5
+
+
+-----------------------------Led Red Gnd Gren-----------------------------
+Pino 1   A6 do MCP23017
+Pino 2 resitor 1k GND
+Pino 3  A7 do MCP23017
+
+-----------------------------Modulo Rele-----------------------------
+Pino 3  A7 do MCP23017
+GND    GNd
+Vcc    5V
+-----------------------------Chave Mias Informaçoes-----------------------------
+Pino 1   1k Gnd
+pino 2  A3 do MCP23017
+-----------------------------Divisor Tensao-----------------------------
+
+https://3.bp.blogspot.com/-KUKEPq2YMaE/TbnyWuHRliI/AAAAAAAAATw/buRl5gbCytE/s320/divisor-tensao.gif
+
+R1 = 1k      VCC
+out = A0 do arduino
+R2 = 10k      GND
+
+https://3.bp.blogspot.com/-KUKEPq2YMaE/TbnyWuHRliI/AAAAAAAAATw/buRl5gbCytE/s320/divisor-tensao.gif
+
+R1 = 1k     VCC
+out = A1 do arduino
+R2 = 10k   GND
