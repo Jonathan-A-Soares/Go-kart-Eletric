@@ -4,7 +4,6 @@
 #include <MFRC522.h>
 #include <SoftwareSerial.h>
 #include <TinyGPS++.h>         // Include the TinyGPS++ library
-#include <DS3231.h>            //Biblioteca para manipulação do DS3231
 #include "Adafruit_MCP23017.h" //adiciona biblioteca do modulo  MCP23017
 
 #define SS_PIN 10
@@ -14,14 +13,11 @@
 #define gpsPort ssGPS    // Alternatively, use Serial1 on the Leonardo
 #define SerialMonitor Serial
 #define GPS_BAUD 9600
-const int pinoPOT = A5; //PINO ANALÓGICO UTILIZADO PELO POTENCIÔMETRO
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);                   //declaraçao de objeto
 MFRC522 mfrc522(SS_PIN, RST_PIN);                     // Create MFRC522 instance.
 SoftwareSerial ssGPS(ARDUINO_GPS_TX, ARDUINO_GPS_RX); // Create a SoftwareSerial
 TinyGPSPlus tinyGPS;                                  // Create a TinyGPSPlus object
-DS3231 clock;                                         //declaraçao de objeto
-RTCDateTime dt;                                       //declaraçao de objeto
 Adafruit_MCP23017 mcp;                                // cria objeto
 
 //variaveis globais---------------------------------------------------------------------------------------------------------
@@ -140,7 +136,6 @@ void setup(void)
     pinMode(6, OUTPUT);
     pinMode(8, OUTPUT);
     pinMode(2, INPUT_PULLUP);
-    pinMode(pinoPOT, INPUT);
 }
 
 void loop()
